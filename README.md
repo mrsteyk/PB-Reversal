@@ -33,7 +33,7 @@ Table:
 | 0xb45181          | patch  4  | 0xc6 0x85 0x8f 0xfe 0xff 0xff 0x01                                                   |
 | 0xb481c3          | patch  5  | 0x8b 0x85 0xf4 0xfd 0xff 0xff                                                        |
 | 0xb48244          | patch  6  | 0x90 0x90 0x90 0x90 0x90 0x90                                                        |
-| 0xb48251          | patch ?7? | 0x67 0x76 // right one - 0x0f 0x8e                                                   |
+| 0xb48251          | patch  7  | 0x67 0x76 // right one - 0x0f 0x8e                                                   |
 
 ---
 
@@ -52,3 +52,7 @@ b mprotect
 call $dlopen("/home/mrsteyk/pb.so", 1)
 ```
 * SAME SHIT EXCEPT YOU PRESS `c` ABOUT 6 TIMES AND IGNORE FIRST TOTALLY RIGHT PATCH, PATCHING `c7 44` to `c7 44`! (genius, amirite?)
+
+---
+
+# Moral of this story is RTFM!
